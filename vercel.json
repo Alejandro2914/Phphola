@@ -1,15 +1,8 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "holamundo.php",
-        "use": "@vercel/php"
+    "functions": {
+      "api/index.php": {
+        "runtime": "php-8.1"
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/holamundo.php"
-      }
-    ]
-  }
+    }
+}
